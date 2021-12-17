@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dictionary</title>
+</head>
+<body>
+<script>
+    let word = prompt("Enter an English word")
+    let Eng = ["one", "two", "three", 'for', 'five'];
+    let Viet = ["một", "hai", "ba", 'bốn', 'năm'];
+    for (let i = 0; i < Eng.length; i++) {
+        if(Eng.indexOf(word) !== -1) {
+            alert("Dịch sang tiếng Việt là " + Viet[Eng.indexOf(word)]);
+            break;
+        } else {
+            alert("Can not find out " + word);
+            break;
+        }
+    }
+</script>
+</body>
+</html>
